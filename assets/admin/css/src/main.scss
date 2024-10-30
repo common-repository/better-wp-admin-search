@@ -1,0 +1,111 @@
+.bwpas-wrap{
+  width: 90%;
+  margin: 0 auto;
+
+  .flex {
+    display: flex;
+    align-content: space-between
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .search-input-group {
+    input[type="text"]{
+      width: 30rem;
+    } 
+  }
+  .notice.notice-info {
+    padding: 1em;
+  }
+  .wp-heading-inline{
+    span {
+      background-color: rgb(255, 255, 0)
+    }
+  }
+  .submit {
+    display: flex;
+    align-items: center;
+    .submitting {
+      opacity: 0.8;
+      pointer-events: none;
+    }
+    .loader{
+      height: 24px;
+      margin-left: 6px;
+    }
+    .hidden-loader {
+      display: none;
+    }
+  }
+  .search-form {
+    margin: 2rem 0;
+    
+    .search-input-group {
+      margin-bottom: 2rem;
+    }
+
+    .post-types-opt { 
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .results-table{
+    tr {
+      th{
+        font-weight: bold; 
+        padding: 15px 10px;
+      }
+      th:first-of-type{
+        width: 50%;
+      }
+      .actions, .post-date {
+        margin-top: 4px;
+      }
+      td {
+        vertical-align: top !important;
+        word-break: break-all;
+        .attachment-details {
+          padding-left: 20px
+        }
+        p {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .tablenav-pages{
+    float: right;
+    margin: 6px 0;
+    display: flex;
+    align-items: center;
+    a {
+      margin: 0 0.125rem;
+    }
+    .pagination-links{
+      display: flex;
+      align-items: center;
+      margin-left: 4px;
+      .paging-input, .displaying-num{
+        margin: 0 4px;
+      }
+    }
+    .disabled-page-nav{
+      color: #a7aaad !important;
+      border-color: #dcdcde !important;
+      background: #f6f7f7 !important;
+      box-shadow: none !important;
+      cursor: default;
+      transform: none !important;
+    }
+  }
+  .bwpas-filter-results{
+    .current {
+      pointer-events: none;
+    }
+  }
+  .hidden-pagination-block{
+    display: none;
+  }
+}
